@@ -26,6 +26,9 @@ jobs:
         uses: actions/setup-python@v2
         with:
           python-version: '3.9'
+      - name: Instalar dependências
+        run: |
+          docker compose build
       - name: Executar testes
         run: |
           python test.py
