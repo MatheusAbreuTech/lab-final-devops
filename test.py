@@ -17,7 +17,7 @@ class APITestCase(unittest.TestCase):
 
     def test_acesso_token(self):
         response_login = self.client.post('/login')
-        token = response_login.json["access_token"]
+        token = response_login.json["access_toke"]
         print(token)
 
         response_protected = self.client.get('/protected', headers={'Authorization': f"Bearer {token}"})
