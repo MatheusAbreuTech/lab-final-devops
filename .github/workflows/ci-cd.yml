@@ -28,7 +28,7 @@ jobs:
           python-version: '3.9'
       - name: Executar testes
         run: |
-          pytest test.py
+          python test.py
 
   deploy:
     runs-on: ubuntu-latest
